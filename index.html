@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Baby Shower | Baby Spirito</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Allura&family=Cormorant+Garamond:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="scene" aria-live="polite">
+      <section class="invitation-card">
+        <div class="leaf leaf-left" aria-hidden="true"></div>
+        <div class="leaf leaf-right" aria-hidden="true"></div>
+        <div class="wave" aria-hidden="true"></div>
+
+        <header class="top-content">
+          <svg viewBox="0 0 300 90" class="curved-text-svg" aria-hidden="true">
+            <path id="curve" d="M 40 70 Q 150 10 260 70" fill="transparent" />
+            <text class="curved-text">
+              <textPath href="#curve" startOffset="50%" text-anchor="middle" data-i18n="miracle">
+                A MIRACLE IS ON THE WAY
+              </textPath>
+            </text>
+          </svg>
+
+          <div class="ark-zone" aria-hidden="true">
+            <div class="ark"></div>
+            <div class="animal animal-giraffe"></div>
+            <div class="animal animal-elephant"></div>
+            <div class="animal animal-lion"></div>
+            <div class="animal animal-zebra"></div>
+            <div class="animal animal-bear"></div>
+            <span class="star s1">✦</span>
+            <span class="star s2">✦</span>
+            <span class="star s3">✦</span>
+          </div>
+        </header>
+
+        <div class="text-content">
+          <p class="detail-text" data-i18n="joinUs">PLEASE JOIN US FOR A</p>
+          <h1 class="main-script-title" data-i18n="title">baby shower</h1>
+          <p class="detail-text" data-i18n="honoring">HONORING BABY SPIRITO</p>
+          <p class="name-title">Michelle Spirito &amp; Michael Spirito</p>
+
+          <div class="countdown-wrap">
+            <p class="detail-text" data-i18n="countdownLabel">COUNTDOWN</p>
+            <div class="countdown" id="countdown">
+              <div><strong id="days">--</strong><span data-i18n="days">DAYS</span></div>
+              <div><strong id="hours">--</strong><span data-i18n="hours">HOURS</span></div>
+              <div><strong id="minutes">--</strong><span data-i18n="minutes">MIN</span></div>
+              <div><strong id="seconds">--</strong><span data-i18n="seconds">SEC</span></div>
+            </div>
+          </div>
+
+          <section class="details-grid" aria-label="Event details">
+            <div>
+              <p class="label" data-i18n="date">DATE</p>
+              <p>Saturday<br />June 20, 2026</p>
+            </div>
+            <div>
+              <p class="label" data-i18n="time">TIME</p>
+              <p>3:00 PM</p>
+            </div>
+            <div>
+              <p class="label" data-i18n="location">LOCATION</p>
+              <p>
+                616 S Trappe Rd<br />
+                Collegeville, PA 19426
+              </p>
+            </div>
+          </section>
+
+          <section class="actions">
+            <div class="language-switch" role="group" aria-label="Language selector">
+              <button class="btn btn-small active" id="btn-en" type="button">English</button>
+              <button class="btn btn-small" id="btn-es" type="button">Español</button>
+            </div>
+
+            <div class="cta-row">
+              <a class="btn" id="accept-link" target="_blank" rel="noreferrer" data-i18n="accept">Accept Invitation</a>
+              <a class="btn btn-ghost" id="decline-link" target="_blank" rel="noreferrer" data-i18n="decline">Decline Invitation</a>
+            </div>
+
+            <div class="cta-row">
+              <a class="btn btn-soft" id="google-maps" target="_blank" rel="noreferrer">Google Maps</a>
+              <a class="btn btn-soft" id="apple-maps" target="_blank" rel="noreferrer">Apple Maps</a>
+            </div>
+
+            <div class="cta-row">
+              <a class="btn btn-soft" href="https://www.amazon.com" target="_blank" rel="noreferrer" data-i18n="registry">Gift Registry</a>
+            </div>
+          </section>
+        </div>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
